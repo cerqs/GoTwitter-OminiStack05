@@ -1,0 +1,18 @@
+
+yarn init -y   
+yarn add express
+yarn add mongoose
+yarn add nodemon -D
+    configurar package.json 
+    ,
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  }
+
+npm start   
+
+MLAB  - banco mongoDB online
+
+yarn add socket.io
+
+yarn add cors  -- Segurança  para acesso de aplicações

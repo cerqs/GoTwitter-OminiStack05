@@ -1,0 +1,9 @@
+react-native init mobile
+
+react-native run-android
+
+yarn add react-navigation   /*   FOI ATUALIZADO SEGUIDOR DOCUMENTAÇÃO   */
+
+react-native start --reset-cache
+
+yarn add react-native-gesture-handler
