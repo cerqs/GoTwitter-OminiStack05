@@ -1,14 +1,29 @@
-import React, { Component } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, FlatList } from 'react-native';
+import Tweet from '../components/Tweet';
+import api from '../Services/api';
 
 export default class Timeline extends Component {
+  state= {
+    tweets:[],
+  };
+
+  async componentDidMount(){
+    const response = await api.get('tweets');
+    this.setState({ tweets: response.data });
+    
+  }
+
   render() {
     return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    )
-  }
+      <View style={ styles.container } >
+        <FlatList
+          data ={ this.state.tweets }
+          keyExtractor ={ tweet=> tweet._id }
+          renderItem={({ item }) => <Tweet tweet={item} />}
+        />
+    </View>
+    )}
 }
 
 

@@ -7,3 +7,8 @@ yarn add react-navigation   /*   FOI ATUALIZADO SEGUIDOR DOCUMENTAÇÃO   */
 react-native start --reset-cache
 
 yarn add react-native-gesture-handler
+
+
+yarn add react-native vector-icons
+
+yarn add axios
