@@ -7,7 +7,7 @@ Simulação da Timeline do Tweeter com atualização em tempo real.
 Backend: 
 ```
 node, mongoose, express, nodemon, cors, socket.io 
-Base dados mongoDb ospedada no https://mlab.com/ 
+Base de dados mongoDb hospedada no https://mlab.com/ 
 ```
 
 Frontend:
