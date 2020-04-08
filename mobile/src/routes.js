@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavigationContainer} from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
-import LinkNewTwitter from './components/LinkNewTwitter';
 
 
 
@@ -28,19 +27,15 @@ export default function Routes() {
                 <AppStack.Screen 
                     name = "Timeline" 
                     component = { Timeline }
-                    options={
-                        {
-                            headerRight:() => (
-                                <LinkNewTwitter/>
-                            )
-                        }
-                    }
                     
                 />
+
                 <AppStack.Screen 
                     name = "New" 
                     component = { New } 
+                    options={{ headerShown: false}}
                 />
+
             </AppStack.Navigator>
         </NavigationContainer>
     );

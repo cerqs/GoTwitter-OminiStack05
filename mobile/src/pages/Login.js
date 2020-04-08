@@ -6,10 +6,9 @@ import {
   TextInput, 
   TouchableOpacity, 
   StyleSheet, 
-  KeyboardAvoidingView 
+  KeyboardAvoidingView,
+  AsyncStorage 
 } from 'react-native';
-
-import { AsyncStorage } from 'react-native-community/AsyncStorage';
 
 import { CommonActions } from '@react-navigation/native';
 

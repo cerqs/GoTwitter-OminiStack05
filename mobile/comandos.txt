@@ -12,3 +12,5 @@ yarn add react-native-gesture-handler
 yarn add react-native vector-icons
 
 yarn add axios
+
+yarn add socket.io-clint
