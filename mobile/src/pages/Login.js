@@ -6,12 +6,11 @@ import {
   TextInput, 
   TouchableOpacity, 
   StyleSheet, 
-  KeyboardAvoidingView,
-  AsyncStorage 
+  KeyboardAvoidingView
 } from 'react-native';
 
 import { CommonActions } from '@react-navigation/native';
-
+import  AsyncStorage  from '@react-native-community/async-storage';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -25,7 +24,7 @@ export default class Login extends Component {
     const  username = await AsyncStorage.getItem('@GoTwitter:username');
 
     if (username){
-      this.navigationToTimeline();
+      //this.navigationToTimeline();
     }
   }
 

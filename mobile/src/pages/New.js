@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, TextInput, AsyncStorage } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 import  Icon  from 'react-native-vector-icons/MaterialIcons';
 import Api from '../Services/api';
+import  AsyncStorage  from '@react-native-community/async-storage';
 
 export default class New extends Component {
   state = {
